@@ -1,0 +1,21 @@
+jQuery(document).ready(function($){
+	jQuery.fn.change_page=function(page){
+		$("#page_id").val(page);
+		$("#form_id").submit();
+	}
+	jQuery.fn.change_order=function(column,order){
+		$("#order_column").val(column);
+		$("#order").val(order);
+		$("#form_id").submit();
+	}
+	jQuery.fn.delete=function(id){
+		$("#my_action").val('delete');
+		$("#my_id").val(id);
+		$("#form_id").submit();
+	}
+	jQuery.fn.view_content=function(id){
+		$("#my_action").val('view');
+		$("#my_id").val(id);
+		$("#form_id").submit();
+	}
+});
