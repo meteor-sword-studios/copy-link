@@ -9,7 +9,8 @@ Author: Dejan SEO
 Requires at least: 2.0
 Tested up to: 4.2.2
 Stable tag: 1.1
-Version: 1.1 
+
+CopyLink is a WordPress plugin which places automatic links on text copied from your website.
 
 == Description ==
 
