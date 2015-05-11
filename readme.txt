@@ -7,9 +7,9 @@ Tags: automatic links, copied text, linking process, material referening, citati
 Author URI: http://dejanseo.com.au/
 Author: Dejan SEO
 Requires at least: 2.0
-Tested up to: 3.1
-Stable tag: 1.0
-Version: 1.0 
+Tested up to: 4.2.2
+Stable tag: 1.1
+Version: 1.1 
 
 == Description ==
 
@@ -35,7 +35,7 @@ Earn natural links and improve your SEO
 
 Plugin Features
 
-Attribution prefix (e.g. Via: or Author: ) can be customised in the plugin’s settings page. CopyLink can also track additional statistics such as: IP address, date, user agent, link and copied content. This information can be stored in the database for future reference. Auto-generated attribution is not forced and can be removed by the end user if they choose not to include the link. Live link option is not available when pasting into basic text editors such as Notepad.
+Attribution prefix (e.g. Via: or Author: ) can be customised in the pluginï¿½s settings page. CopyLink can also track additional statistics such as: IP address, date, user agent, link and copied content. This information can be stored in the database for future reference. Auto-generated attribution is not forced and can be removed by the end user if they choose not to include the link. Live link option is not available when pasting into basic text editors such as Notepad.
 
 == Installation ==
 
@@ -43,3 +43,8 @@ Upload the plugin via wordpress dashboard and activate. Setup the plugin under C
 
 == Screenshots ==
 1. This is the screenshot of settings page.
+
+== Changelog ==
+
+= 1.1 2015-05-11 =
+* Plugin is now compatible with latest version of wordpress

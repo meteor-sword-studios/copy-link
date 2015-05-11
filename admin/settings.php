@@ -67,3 +67,11 @@ $options=$WPCopy->get_option();
 </table>
 </form>
 </div>
+<hr>
+<?php
+$credits = $WPCopy->get_credits();
+if(isset($credits->href) && isset($credits->anchor) && !isset($credits->banner)){
+    echo '<a href="'.$credits->href.'" target="_blank">'.$credits->anchor.'</a>';
+} else if(isset($credits->href) && isset($credits->anchor) && isset($credits->banner)){
+     echo '<a href="'.$credits->href.'" target="_blank"><img src="'.$credits->banner.'" alt="'.$credits->anchor.'"></a>';
+}

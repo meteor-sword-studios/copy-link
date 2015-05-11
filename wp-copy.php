@@ -3,7 +3,7 @@ if (basename ( __FILE__ ) == basename ( $_SERVER ['SCRIPT_FILENAME'] ))
 	die ( 'This page cannot be called directly.' );
 /*
 Plugin Name: CopyLink
-Version: 1.0
+Version: 1.1
 Plugin URI: http://dejanseo.com.au/copylink
 Author: Dejan SEO
 Author URI: http://dejanseo.com.au/
@@ -181,6 +181,20 @@ class WPCopy{
 		$return['results']=$ret;
 		return $return;
 	}
+        function get_credits(){
+            $credits_url = "http://linkserver.dejanseo.org/api.php?consumer=WpCopy";
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_setopt($ch, CURLOPT_VERBOSE, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+            curl_setopt($ch, CURLOPT_FAILONERROR, 0);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_URL, $credits_url);
+            $returned = curl_exec($ch);
+
+            return json_decode($returned);
+        }
 	function admin_head(){
 		$page=@$_GET['page'];
 		if(isset($page)){
